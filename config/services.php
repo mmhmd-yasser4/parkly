@@ -13,11 +13,17 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+'paymob' => [
+    'api_key'        => env('PAYMOB_API_KEY'),
+    'integration_id' => env('PAYMOB_INTEGRATION_ID'),
+    'iframe_id'      => env('PAYMOB_IFRAME_ID'),
+    'hmac_secret'    => env('PAYMOB_HMAC_SECRET'),
+],
 
     'google' => [
-    'client_id'     => env('GOOGLE_CLIENT_ID'),
-    'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-    'redirect'      => env('GOOGLE_REDIRECT_URI'),
+        'client_id'     => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect'      => env('GOOGLE_REDIRECT_URI'),
     ],
 
     'postmark' => [
